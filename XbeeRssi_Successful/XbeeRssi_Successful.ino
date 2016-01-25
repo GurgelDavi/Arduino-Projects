@@ -50,7 +50,7 @@ void loop()
         for (int i =0 ; i<=dataLength-1;i++) 
           {
             uint8_t temp=rx16.getData(i);
-            Serial.print(temp);
+            Serial.print(temp,HEX);
             Serial.print(" ");
           }
         Serial.print("\nFrom:"); Serial.print(rx16.getRemoteAddress16());
